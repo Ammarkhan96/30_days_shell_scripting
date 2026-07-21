@@ -1,0 +1,9 @@
+==========================
+Total Logs: 15
+WARNING Count: 5
+ERROR Count: 7
+
+Top Errors:
+      3 API timeout
+      2 Redis connection failed
+      2 Database connection failed

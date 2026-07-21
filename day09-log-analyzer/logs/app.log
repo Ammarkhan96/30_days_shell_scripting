@@ -1,0 +1,15 @@
+INFO User login successful
+INFO Product viewed
+WARNING High memory usage
+ERROR Database connection failed
+INFO User logout
+ERROR API timeout
+WARNING Disk usage high
+ERROR Database connection failed
+ERROR API timeout
+ERROR API timeout
+INFO Product added
+INFO Product deleted
+WARNING CPU usage high
+ERROR Redis connection failed
+ERROR Redis connection failed
