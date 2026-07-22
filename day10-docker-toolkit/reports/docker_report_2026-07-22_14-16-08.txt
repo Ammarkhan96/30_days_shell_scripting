@@ -1,0 +1,63 @@
+==============================
+DOCKER HEALTH REPORT
+==============================
+
+Running Containers
+CONTAINER ID   IMAGE                            COMMAND                  CREATED        STATUS       PORTS                                         NAMES
+cb5d2c1b0477   kindest/node:v1.31.0             "/usr/local/bin/entr…"   43 hours ago   Up 3 hours   127.0.0.1:46731->6443/tcp                     kompose-demo-control-plane
+6b15d817e4be   prom/node-exporter               "/bin/node_exporter"     2 weeks ago    Up 3 hours   0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp   node-exporter
+7b9c4d12ad9c   react-devops-project-portfolio   "docker-entrypoint.s…"   2 weeks ago    Up 3 hours   0.0.0.0:4173->4173/tcp, [::]:4173->4173/tcp   portfolio
+6dbd61560919   grafana/grafana                  "/run.sh"                2 weeks ago    Up 3 hours   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   grafana
+64c960341291   sonarqube:lts-community          "/opt/sonarqube/dock…"   2 weeks ago    Up 3 hours   0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp   sonarqube
+53884831993c   prom/prometheus                  "/bin/prometheus --c…"   2 weeks ago    Up 3 hours   0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp   prometheus
+
+All Containers
+CONTAINER ID   IMAGE                                 COMMAND                  CREATED        STATUS                      PORTS                                                                                                                                  NAMES
+cb5d2c1b0477   kindest/node:v1.31.0                  "/usr/local/bin/entr…"   43 hours ago   Up 3 hours                  127.0.0.1:46731->6443/tcp                                                                                                              kompose-demo-control-plane
+395382c13a26   docker-to-k8s-frontend                "/docker-entrypoint.…"   43 hours ago   Exited (0) 43 hours ago                                                                                                                                            frontend
+e24d1f2d1dfd   docker-to-k8s-backend                 "docker-entrypoint.s…"   43 hours ago   Exited (137) 43 hours ago                                                                                                                                          backend
+0ac88e160106   cicd-demo:v1                          "/docker-entrypoint.…"   46 hours ago   Exited (255) 44 hours ago   0.0.0.0:8080->80/tcp, [::]:8080->80/tcp                                                                                                cicd-demo
+6b15d817e4be   prom/node-exporter                    "/bin/node_exporter"     2 weeks ago    Up 3 hours                  0.0.0.0:9100->9100/tcp, [::]:9100->9100/tcp                                                                                            node-exporter
+7b9c4d12ad9c   react-devops-project-portfolio        "docker-entrypoint.s…"   2 weeks ago    Up 3 hours                  0.0.0.0:4173->4173/tcp, [::]:4173->4173/tcp                                                                                            portfolio
+6dbd61560919   grafana/grafana                       "/run.sh"                2 weeks ago    Up 3 hours                  0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp                                                                                            grafana
+64c960341291   sonarqube:lts-community               "/opt/sonarqube/dock…"   2 weeks ago    Up 3 hours                  0.0.0.0:9000->9000/tcp, [::]:9000->9000/tcp                                                                                            sonarqube
+53884831993c   prom/prometheus                       "/bin/prometheus --c…"   2 weeks ago    Up 3 hours                  0.0.0.0:9090->9090/tcp, [::]:9090->9090/tcp                                                                                            prometheus
+b96d25980fcb   multi-stage                           "/docker-entrypoint.…"   3 weeks ago    Created                                                                                                                                                            musing_gates
+833c65a8323a   multi-stage                           "/docker-entrypoint.…"   3 weeks ago    Created                                                                                                                                                            admiring_matsumoto
+bfe0d55ed390   multi-stage                           "/docker-entrypoint.…"   3 weeks ago    Exited (255) 3 weeks ago    80/tcp, 0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp                                                                                    elated_wilbur
+61b4189f0308   32514d9ec6e2                          "docker-entrypoint.s…"   3 weeks ago    Exited (255) 3 weeks ago    0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp                                                                                            dreamy_cori
+e91769f36187   gitops-ai-app                         "docker-entrypoint.s…"   2 months ago   Exited (255) 2 months ago   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp                                                                                            nervous_shirley
+2e992cb7f71f   gitops-ai-app                         "docker-entrypoint.s…"   2 months ago   Exited (255) 2 months ago   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp                                                                                            cool_matsumoto
+6a8a03c769ea   ai-devops-app                         "docker-entrypoint.s…"   2 months ago   Exited (255) 2 months ago   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp                                                                                            practical_gates
+c685be6c0098   gcr.io/k8s-minikube/kicbase:v0.0.50   "/usr/local/bin/entr…"   2 months ago   Exited (255) 12 days ago    127.0.0.1:32768->22/tcp, 127.0.0.1:32769->2376/tcp, 127.0.0.1:32770->5000/tcp, 127.0.0.1:32771->8443/tcp, 127.0.0.1:32772->32443/tcp   minikube
+d3f6c74c08dc   ai-devops-app                         "docker-entrypoint.s…"   2 months ago   Exited (255) 2 months ago   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp                                                                                            festive_agnesi
+
+Docker Images
+REPOSITORY                       TAG             IMAGE ID       CREATED         SIZE
+docker-to-k8s-frontend           latest          88bb9d156d41   43 hours ago    62.4MB
+docker-to-k8s-backend            latest          84db6962f7d1   43 hours ago    141MB
+cicd-demo                        backup          334b64a5ffb9   47 hours ago    161MB
+cicd-demo                        v1              334b64a5ffb9   47 hours ago    161MB
+react-devops-project-portfolio   latest          51b8abfbdcf8   2 weeks ago     399MB
+ammar-portfolio                  latest          e7097d88cd9e   2 weeks ago     610MB
+prom/prometheus                  latest          f725874ae0a3   2 weeks ago     250MB
+aquasec/trivy                    latest          b81e075c68ad   3 weeks ago     190MB
+multi-stage                      latest          f8cc9e3839f0   3 weeks ago     163MB
+day02-todo                       latest          32514d9ec6e2   3 weeks ago     173MB
+grafana/grafana                  latest          e76fd1761e3c   4 weeks ago     1.16GB
+kindest/node                     <none>          caf23176b804   7 weeks ago     892MB
+sonarsource/sonar-scanner-cli    latest          8368f5531d4d   2 months ago    1.13GB
+gitops-ai-app                    latest          a0164280d018   2 months ago    1.09GB
+ai-devops-app                    latest          a298c827c02d   2 months ago    1.09GB
+prom/node-exporter               latest          47509d7f7c15   3 months ago    25.8MB
+gcr.io/k8s-minikube/kicbase      v0.0.50         6da180ef5035   5 months ago    1.37GB
+sonarqube                        lts-community   b2698b16c2b2   10 months ago   604MB
+kindest/node                     <none>          b5cb8c3b1441   23 months ago   1.03GB
+gcr.io/cadvisor/cadvisor         v0.49.1         c02cf39d3dba   2 years ago     80.8MB
+
+Docker Disk Usage
+TYPE            TOTAL     ACTIVE    SIZE      RECLAIMABLE
+Images          19        14        8.871GB   3.995GB (45%)
+Containers      18        6         375.3MB   2.396MB (0%)
+Local Volumes   18        3         24.91GB   18.66GB (74%)
+Build Cache     94        0         1.011GB   1.011GB
