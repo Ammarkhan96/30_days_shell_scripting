@@ -1,0 +1,20 @@
+======================================
+SSL CERTIFICATE EXPIRY REPORT
+Generated: Fri Aug  7 05:03:45 PM PKT 2026
+======================================
+
+Domain : google.com
+Expiry : Oct 12 18:05:55 2026 GMT
+Remaining Days : 66
+Status : OK
+-------------------------------------
+Domain : github.com
+Expiry : Sep 30 23:59:59 2026 GMT
+Remaining Days : 54
+Status : OK
+-------------------------------------
+Domain : openai.com
+Expiry : Oct 17 05:19:55 2026 GMT
+Remaining Days : 70
+Status : OK
+-------------------------------------
