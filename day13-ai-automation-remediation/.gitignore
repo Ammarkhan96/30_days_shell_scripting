@@ -1,0 +1,4 @@
+config/config.env
+logs/*.txt
+logs/*.json
+reports/*.md
